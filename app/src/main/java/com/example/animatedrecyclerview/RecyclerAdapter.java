@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,6 +37,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     public void onBindViewHolder(@NonNull RecyclicViewHolder holder, int position) {
 
         //binding data here
+
+        //animation for image
+        holder.singleImage.setAnimation(AnimationUtils.loadAnimation(context,R.anim.fade_transition_animation));
+
+
         holder.tv_title.setText(mData.get(position).getTitle());
         holder.tv_content.setText(mData.get(position).getContent());
         holder.tv_date.setText(mData.get(position).getDate());
