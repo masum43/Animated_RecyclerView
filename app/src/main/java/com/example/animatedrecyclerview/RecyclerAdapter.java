@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -40,6 +41,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
         //animation for image
         holder.singleImage.setAnimation(AnimationUtils.loadAnimation(context,R.anim.fade_transition_animation));
+        //animation for container
+        holder.relativeLayoutSingleItem.setAnimation(AnimationUtils.loadAnimation(context,R.anim.fade_scale_animation));
 
 
         holder.tv_title.setText(mData.get(position).getTitle());
@@ -62,6 +65,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
         TextView tv_title, tv_content, tv_date;
         ImageView singleImage;
+        RelativeLayout relativeLayoutSingleItem;
 
         public RecyclicViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -70,6 +74,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             tv_content = itemView.findViewById(R.id.tv_description);
             tv_date = itemView.findViewById(R.id.tvDate);
             singleImage = itemView.findViewById(R.id.single_image_id);
+            relativeLayoutSingleItem = itemView.findViewById(R.id.containerRelLayId);
 
 
         }

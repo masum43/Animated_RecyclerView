@@ -9,6 +9,7 @@
     >
 
     <RelativeLayout
+        android:id="@+id/containerRelLayId"
         android:background="@drawable/card_bg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
