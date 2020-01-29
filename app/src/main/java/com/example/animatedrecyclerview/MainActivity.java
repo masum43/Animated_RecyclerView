@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         //let's make this activity on full screen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         //hide the action bar
         getSupportActionBar().hide();
 
@@ -38,32 +37,41 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclicViewId);
         mData = new ArrayList<>();
         //adding data
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
-        mData.add(new RecyclerItem("Title1","Content 1 which is a descripyion","10/12/2020"));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+        mData.add(new RecyclerItem("Title1","Content 1 which is a description","10/12/2020",R.drawable.ic_launcher_background));
+
 
         //adapter
         recyclerAdapter = new RecyclerAdapter(this,mData);
